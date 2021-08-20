@@ -1,0 +1,19 @@
+---
+INDIGO_WELCOME_MESSAGE: "MUST LEARNING CENTER"
+# This is hardcoded in _variables.scss as $primary to make the linter happy.
+# INDIGO_PRIMARY_COLOR: "#66cc99"
+
+# Footer links are dictionaries with a "title" and "url"
+# To remove all links, write:
+# INDIGO_FOOTER_NAV_LINKS: []
+# INDIGO_FOOTER_LEGAL_LINKS: []
+INDIGO_FOOTER_NAV_LINKS:
+  - title: "About"
+    url: "https://totem-project.org/#about"
+  - title: "Contact"
+    url: "https://totem-project.org/#contact"
+INDIGO_FOOTER_LEGAL_LINKS:
+  - title: "Terms of use"
+    url: "https://totem-project.org/terms.html"
+  - title: "Privacy Policy"
+    url: "https://totem-project.org/privacy.html"

@@ -1,0 +1,41 @@
+$primary: #6c9;
+
+// Totem variables
+$baseline: 20px;
+$course-image-height: ($baseline*12);
+$course-card-height: ($baseline*22);
+
+// Totem colours
+$global-header-background-color: #033;
+$global-header-text-color: #fff;
+$footer-background-color: #343a40;
+$footer-text-color: #fff;
+$promo-box-text-color: #fff;
+$promo-box-text-shadow: 0px 2px 0px rgba(77, 77, 77, 0.4);
+$btn-bg-hover: #fc0;
+
+$find-btn-bg: #003333;
+$find-btn-bg-hover: $btn-bg-hover;
+$find-btn-border: #003333;
+$find-btn-color: #fff;
+$find-btn-color-hover: $find-btn-color;
+
+$theme-btn-bg: $primary;
+$theme-btn-text-color: #fffefe;
+$theme-btn-bg-hover: #fc0;
+$theme-btn-text-color-hover: #fffefe;
+$theme-btn-shadow: none;
+
+// breakpoints
+$breakpoint-mobile: 760px;
+$breakpoint-tablet: 990px;
+
+// Theme fonts
+$font-family-title: NotoSans;
+$header-sans-serif: 'NotoSans', Arial, Helvetica, sans-serif;
+$f-sans-serif: 'NotoSans', Arial, Helvetica, sans-serif;
+$serif: Crimson;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
+

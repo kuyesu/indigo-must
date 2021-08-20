@@ -1,0 +1,109 @@
+// RaccoonGang theme button mixin and its use
+%theme-btn {
+  text-align: center;
+  color: #ffe;
+  text-shadow: none;
+  background: $primary;
+  border: none;
+  box-shadow: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    &:not(:disabled) {
+      box-shadow: none;
+      border: none;
+      background: $btn-bg-hover;
+      color: #ffe;
+    }
+  }
+}
+
+// Make sign-in button a RG theme button
+.global-header .nav-links .secondary  {
+  a.sign-in-btn, a.register-btn {
+    @extend %theme-btn;
+  }
+}
+
+.footer-about-openedx {
+  p {
+    color: #6c9;
+  }
+}
+
+// Fix more buttons
+.btn-primary, button.action-primary, .login-register .action-primary, .login-button .action-primary, .find-courses .discovery-submit, .course-target-link.enter-course {
+  @extend %theme-btn;
+}
+
+// Fix height of start course button:
+a.btn-primary.action-resume-course {
+  // 0.781rem makes the whole button 45px, like the `button` object next to it
+  padding: 0.781rem 0.625rem
+}
+
+// Fix color of the buttons on the Dashboard
+.dashboard .main-container .my-courses .course .details .enter-course {
+  color: $primary;
+  border: 1px solid $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    &:not(:disabled) {
+      box-shadow: none;
+      background: $primary;
+    }
+  }
+}
+
+// Make course information buttons RG theme button
+.course-info {
+    position: relative;
+    z-index: 1;
+
+    header {
+        &.course-profile {
+            .intro-inner-wrapper {
+                .intro {
+                    &>.heading-group {
+                        button {
+                            @extend %theme-btn;
+                        }
+                    }
+
+                    .main-cta {
+                        strong {
+                            @extend %theme-btn;
+                        }
+
+                        a {
+                            &.find-courses,
+                            &.register,
+                            &.add-to-cart {
+                                @extend %theme-btn;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lang_ar & .details .inner-wrapper .course-staff .teacher .teacher-image {
+        margin: 0 0 0 15px;
+    }
+}
+
+// Override Open Sans default font
+*:not(.mce-ico):not(.fa):not(.glyphicon),
+.content-wrapper .edx-notes-wrapper .annotator-outer,
+.content-wrapper .edx-notes-wrapper .annotator-editor .annotator-item textarea,
+.content-wrapper .edx-notes-wrapper .annotator-editor .annotator-item form#wiki_revision .CodeMirror,
+.content-wrapper form#wiki_revision .edx-notes-wrapper .annotator-editor .annotator-item .CodeMirror,
+.content-wrapper .edx-notes-wrapper .annotator-viewer div:first-of-type,
+.content-wrapper .edx-notes-wrapper .annotator-editor .annotator-controls .annotator-save,
+.content-wrapper .edx-notes-wrapper .annotator-editor .annotator-controls .annotator-cancel {
+    font-family: 'NotoSans', 'Open Sans', sans-serif !important;
+}
+

@@ -1,0 +1,19 @@
+<%! import re %>
+<%! from django.utils.translation import get_language %>
+<% LANGUAGE = re.match("([a-zA-Z]+)", get_language()).group(0) %>
+<!DOCTYPE html>
+<html>
+  <head>
+    ## These languages exist on totem-project.org
+    % if LANGUAGE in ['fr', 'fa', 'ar', 'es']:
+      <meta http-equiv="Refresh" content="1; url='https://totem-project.org/${ LANGUAGE }/'" />
+    % else:
+      <meta http-equiv="Refresh" content="1; url='https://totem-project.org/'" />
+    % endif
+  </head>
+  <body>
+    <p>This page is hosted on the Greenhost website. Click <a
+      href="https://totem-project.org">this link</a> if you are not redirected
+      automatically.</p>
+  </body>
+</html>
