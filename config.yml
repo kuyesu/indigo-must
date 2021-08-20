@@ -1,5 +1,7 @@
-INDIGO_WELCOME_MESSAGE: "The place for all your online learning"
-INDIGO_PRIMARY_COLOR: "#3b85ff" # cool blue
+
+INDIGO_WELCOME_MESSAGE: "MUST LEARNING CENTER"
+# This is hardcoded in _variables.scss as $primary to make the linter happy.
+# INDIGO_PRIMARY_COLOR: "#66cc99"
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
@@ -7,11 +9,11 @@ INDIGO_PRIMARY_COLOR: "#3b85ff" # cool blue
 # INDIGO_FOOTER_LEGAL_LINKS: []
 INDIGO_FOOTER_NAV_LINKS:
   - title: "About"
-    url: "/about"
+    url: "https://totem-project.org/#about"
   - title: "Contact"
-    url: "/contact"
+    url: "https://totem-project.org/#contact"
 INDIGO_FOOTER_LEGAL_LINKS:
-    - title: "Terms of service"
-      url: "/tos"
-    - title: "Indigo theme for Open edX"
-      url: "https://github.com/overhangio/indigo"
+  - title: "Terms of use"
+    url: "https://totem-project.org/terms.html"
+  - title: "Privacy Policy"
+    url: "https://totem-project.org/privacy.html"
